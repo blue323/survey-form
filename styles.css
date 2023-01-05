@@ -1,0 +1,42 @@
+body {
+    background-color: #2595be95;
+    font-size: 1.1rem;
+}
+
+
+body h1, body p {
+    text-align: center;
+}
+
+form {
+    background-color: #c97777f6;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0.2em;
+}
+
+textarea {
+    width: 99%;
+}
+
+button {
+    width: 60px;
+    height: 30px;
+    border: 1px solid #242424;
+    background-color: #242424;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.3em 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+}

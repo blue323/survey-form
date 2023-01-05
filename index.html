@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Help us improve our service</p>
+    <form id="survey-form">
+        <div>
+            <label for="name" id="name-label">Name</label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" required>
+        </div>
+        <div>
+          <label for="email" id="email-label">Email</label>
+          <input id="email" type="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div>
+          <label for="number" id="number-label">Number</label>
+          <input id="number" type="number" name="number" placeholder="Enter your number" min="1" max="999999999" required>
+        </div>
+        <div>
+          <label for="gender">Choose your gender:</label>
+
+          <select name="gender" id="dropdown">
+            <option value="">--Please choose an option--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select> 
+        </div>
+        <div>
+          <fieldset>
+            <legend>Would you recommend freeCodeCamp to somenone you know?</legend>
+            <label><input id="yes" type="radio" name="recommend" value="Yes" checked>Yes</label>
+            <label><input id="no" type="radio" name="recommend" value="No">No</label>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>What do you like in freeCodeCamp? (Check all that apply)</legend>
+            <label><input id="projects" type="checkbox" name="like" value="projects">Projects</label>
+            <label><input id="tutorials" type="checkbox" name="like" value="tutorials">Tutorials</label>
+            <label><input id="certifications" type="checkbox" name="like" value="certifications">Certifications</label>
+            <label><input id="news" type="checkbox" name="like" value="news">News</label>
+            <label><input id="community" type="checkbox" name="like" value="community">Community</label>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Any comment?</legend>
+            <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+          </fieldset>
+        </div>
+        <div class="button">
+          <button id="submit">Submit</button>
+        </div>
+    </form>
+  </body>
+</html>
